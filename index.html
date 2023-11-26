@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naruto Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">Naruto Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform. Dattebayo.</p>
+  <div class="survey-form">
+    <main>
+      <form id="survey-form">
+        <label id="name-label">Name: 
+          <input id="name" class="name" type="text" required placeholder="Name" />
+        </label>
+        <label id="email-label">Email: 
+          <input id="email" class="email" type="email" required placeholder="Email" />
+        </label>
+        <label id="number-label">Age: 
+          <input id="number" class="number" type="number" min="10" max="120" placeholder="Age">
+        </label>
+        <label> Which is your favourite Jutsu?
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Rasengan</option>
+            <option value="2">Chidori</option>
+            <option value="3">Mokuton Hijutsu: Jukai Kōtan</option>
+            <option value="4">Shinra Tensei</option>
+            <option value="5">Kage Bunshin no Jutsu	</option>
+            <option value="6">Izanagi</option>
+            <option value="7">Senpou: Ryousei no Jutsu	</option>
+            <option value="8">Sozo Saisei</option>
+            <option value="9">Limbo</option>
+            <option value="10">Amaterasu	</option>
+            <option value="11">Gedō: Rinne Tensei no Jutsu</option>
+            <option value="12">Fūton: Rasenshuriken!</option>
+          </select>
+        </label>
+
+        <legend>Would you recommend Naruto to a friend?</legend>
+        <label>
+          <input id="definitely" type="radio" name="recommend" value="recommend" checked /> Definitely 
+        </label>
+        <label>
+          <input id="maybe" type="radio" name="recommend" value="recommend" /> Maybe
+        </label>
+        <label>
+          <input id="not-sure" type="radio" name="recommend" value="recommend" /> Not sure
+        </label>
+
+        <label>Which characters you like most?
+          <input type="checkbox" value="like" /> Naruto Uzumaki
+          <input type="checkbox" value="like" /> Jiraiya
+          <input type="checkbox" value="like" /> Sasuke Uchiha
+          <input type="checkbox" value="like" /> Kakashi Hatake
+          <input type="checkbox" value="like" /> Itachi Uchiha
+          <input type="checkbox" value="like" /> Hashirama Senju
+          <input type="checkbox" value="like" /> Madara Uchiha
+          <input type="checkbox" value="like" /> Tobi/Obito
+          <input type="checkbox" value="like" /> Hinata Hyuuga
+          <input type="checkbox" value="like" /> Tsunade Senju
+          <input type="checkbox" value="like" /> Might Guy
+          <input type="checkbox" value="like" /> Neji Hyuuga
+          <input type="checkbox" value="like" /> Gaara
+          <input type="checkbox" value="like" /> Kurama
+          <input type="checkbox" value="like" /> Orochimaru
+        </label>
+        <label>Any comments or suggestions?
+          <textarea id="suggestions" class="suggestions" name="suggestions" placeholder="Enter your comments or suggestions here..."></textarea>
+        </label>
+        <label>
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </label>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
+
