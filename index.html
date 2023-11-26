@@ -3,82 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naruto Survey Form</title>
+  <title>Star Wars Survey Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h1 id="title">Naruto Survey Form</h1>
-  <p id="description">Thank you for taking the time to help us improve the platform. Dattebayo.</p>
-  <div class="survey-form">
-    <main>
-      <form id="survey-form">
-        <label id="name-label">Name: 
-          <input id="name" class="name" type="text" required placeholder="Name" />
-        </label>
-        <label id="email-label">Email: 
-          <input id="email" class="email" type="email" required placeholder="Email" />
-        </label>
-        <label id="number-label">Age: 
-          <input id="number" class="number" type="number" min="10" max="120" placeholder="Age">
-        </label>
-        <label> Which is your favourite Jutsu?
-          <select id="dropdown">
-            <option value="">Select one</option>
-            <option value="1">Rasengan</option>
-            <option value="2">Chidori</option>
-            <option value="3">Mokuton Hijutsu: Jukai Kōtan</option>
-            <option value="4">Shinra Tensei</option>
-            <option value="5">Kage Bunshin no Jutsu	</option>
-            <option value="6">Izanagi</option>
-            <option value="7">Senpou: Ryousei no Jutsu	</option>
-            <option value="8">Sozo Saisei</option>
-            <option value="9">Limbo</option>
-            <option value="10">Amaterasu	</option>
-            <option value="11">Gedō: Rinne Tensei no Jutsu</option>
-            <option value="12">Fūton: Rasenshuriken!</option>
-          </select>
-        </label>
+  <!-- Survey Introduction -->
+<header>
+  <div class="survey-container">
+    <h1 id="title">Star Wars The Survey Form</h1>
+    <p id="description">(only answer if you are Star Wars fan)</p>
+     <form id="survey-form" action="mailto:8u783k51w@mozmail.com"  method="POST" enctype="text/plain">
+       <br>
+ <!-- Survey Basics -->      
+       <div class="labels">
+         <label id="name-label" for="name">Full Name :</label>
+             <input type="text" name="name" id="name" placeholder="Anakin Skywalker, Darth Vader, Darth Malgus, Master Yoda, Darth Revan..." class="input-box" required></div>
+       <br>
+        <div class="labels">
+         <label id="email-label" for="email">Email :</label>
+             <input type="email" name="email" id="email" placeholder="stromtrooper@empire.com" class="input-box" required></div>
+       <br>
+        <div class="labels">
+         <label id="number-label" for="age">Age :</label>
+             <input type="number" name="age" id="number" min="13" max="130" placeholder="When 900 years old, you reach… Look as good, you will not." class="input-box"></div>
+        <br>
+ <!-- Choose Faction -->  
+       <div class="labels">
+      <p>What is your current occupation?</p>
+      <select id="dropdown" name="faction" class="form-control" required>
+        <option disabled selected value>One of these...</option>
+        <option value="jedi">Jedi</option>
+        <option value="sith">Sith</option>
+        <option value="republic">Galactic Republic</option>
+        <option value="empire">Galactic Empire</option>
+        <option value="mandalorian">Mandalorian</option>
+        <option value="hutt">Hutt</option>
+      </select>
+    </div>
+ <!-- Companion -->  
+       <div class="labels"> 
+              <p id="companion" for="companion">If you had to choose one, who is your best friend?</p>
+          <div>
+       <input
+          name="companion"
+          value="anakin"
+          type="radio"
+          class="input-radio"
+          checked
+        />Anakin Skywalker</div>
+ <div>
+        <input
+          name="companion"
+          value="obi-wan-kenobi"
+          type="radio"
+          class="input-radio"
+        />Obi-Wan Kenobi</div>
+ <div>
+        <input
+          name="companion"
+          value="darth-vader"
+          type="radio"
+          class="input-radio"
+        />Darth Vader</div>
+ <div>
+        <input
+          name="companion"
+          value="luke-skywalker"
+          type="radio"
+          class="input-radio"
+        />Luke Skywalker</div>
+ <div>
+        <input
+          name="companion"
+          value="han-solo"
+          type="radio"
+          class="input-radio"
+        />Han Solo</div>
+ <div>
+        <input
+          name="companion"
+          value="emperor"
+          type="radio"
+          class="input-radio"
+        />Emperor Palpatine</div>
+    </div>
 
-        <legend>Would you recommend Naruto to a friend?</legend>
-        <label>
-          <input id="definitely" type="radio" name="recommend" value="recommend" checked /> Definitely 
-        </label>
-        <label>
-          <input id="maybe" type="radio" name="recommend" value="recommend" /> Maybe
-        </label>
-        <label>
-          <input id="not-sure" type="radio" name="recommend" value="recommend" /> Not sure
-        </label>
-
-        <label>Which characters you like most?
-          <input type="checkbox" value="like" /> Naruto Uzumaki
-          <input type="checkbox" value="like" /> Jiraiya
-          <input type="checkbox" value="like" /> Sasuke Uchiha
-          <input type="checkbox" value="like" /> Kakashi Hatake
-          <input type="checkbox" value="like" /> Itachi Uchiha
-          <input type="checkbox" value="like" /> Hashirama Senju
-          <input type="checkbox" value="like" /> Madara Uchiha
-          <input type="checkbox" value="like" /> Tobi/Obito
-          <input type="checkbox" value="like" /> Hinata Hyuuga
-          <input type="checkbox" value="like" /> Tsunade Senju
-          <input type="checkbox" value="like" /> Might Guy
-          <input type="checkbox" value="like" /> Neji Hyuuga
-          <input type="checkbox" value="like" /> Gaara
-          <input type="checkbox" value="like" /> Kurama
-          <input type="checkbox" value="like" /> Orochimaru
-        </label>
-        <label>Any comments or suggestions?
-          <textarea id="suggestions" class="suggestions" name="suggestions" placeholder="Enter your comments or suggestions here..."></textarea>
-        </label>
-        <label>
-          <button type="submit" id="submit" class="submit-button">
-            Submit
-          </button>
-        </label>
-      </form>
-    </main>
-  </div>
+ <!-- Famous Star Wars sayings -->           
+      <div class="labels">  <p>What is your favorite catchphrase?</p>
+      <select id="dropdown" name="catchphrase" class="form-control" required>
+        <option disabled selected value>choose one....</option>
+        <option value="help">Help me, Obi-Wan Kenobi. You're my only hope.</option>
+        <option value="weapon">This is the weapon of a Jedi Knight. Not as clumsy or random as a blaster; an elegant weapon for a more civilized age.</option>
+        <option value="scum">Mos Eisley spaceport. You will never find a more wretched hive of scum and villainy.</option>
+        <option value="faith">I find your lack of faith disturbing.</option>
+        <option value="do-or-donot">Do or do not, there is not try.</option>
+        <option value="shorter">You are shorter than I expected.</option>
+         <option value="force">May the Force Be With You</option>
+        </select></div>
+         
+ <!-- Favourite Movie -->   <div class="labels"> 
+              <p id="fav-movie" for="fav-movie">What are your favorite activities? (check all that apply)</p>  <input type="checkbox" class="checkboxes" name="episode1" value="episode1">Episode I – The Phantom Menace<br>
+          <input type="checkbox" class="checkboxes" name="episode2" value="episode2">Episode II – Attack of the Clones<br>
+            <input type="checkbox" class="checkboxes" name="episode3" value="episode3">Episode III – Revenge of the Sith<br>
+          <input type="checkbox" class="checkboxes" name="episode4" value="episode4">Episode IV – A New Hope<br>
+          <input type="checkbox" class="checkboxes" name="episode5" value="episode5">Episode V – The Empire Strikes Back<br>
+          <input type="checkbox" class="checkboxes" name="episode6" value="episode6">Episode VI – Return of the Jedi<br> 
+          <input type="checkbox" class="checkboxes" name="clone-wars-animation" value="clone-wars-animation">Star Wars: The Clone Wars<br>
+        <input type="checkbox" class="checkboxes" name="rebels" value="rebels">Star Wars: Rebels<br>
+       </div>
+            
+ <!-- Famous last words -->  
+             <div class="labels">   <p>Is there anything you'd like to say?</p>
+          <textarea class="input-field" id="comments" name="comments" placeholder="We would be honor if you would join us..."></textarea>
+       </div>
+       <br>
+   <button id="submit" type="submit">Submit</button>
+  </form>
+       
+       
+       <br>
+   <!-- Footer  --> 
+<footer id="footer">2023 © Made by Darth Vader as a project for freeCodeCamp.</footer>
+       </div>
 </body>
 </html>
 
