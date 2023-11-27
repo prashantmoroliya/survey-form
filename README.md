@@ -3,6 +3,9 @@
 
 ### freeCodeCamp
 
+**Screenshot:**
+<a href="./Screenshot 2023-11-27 at 12-06-21 Star Wars Survey Form.png" alt="screenshot of website" />
+
 This is the certification project of freeCodeCamp. <br>
 
 This is one of the required projects to earn certification.<br>
