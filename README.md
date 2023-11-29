@@ -3,14 +3,16 @@
 
 ### freeCodeCamp
 
+CodePen.io link: https://codepen.io/pen?template=qBgMjqr
+
 **Screenshot:**
 <img src="./Screenshot 2023-11-27 at 12-06-21 Star Wars Survey Form.png" alt="screenshot of website" />
 
-This is the certification project of freeCodeCamp. <br>
+This is the certification project of freeCodeCamp.
 
-This is one of the required projects to earn certification.<br>
+This is one of the required projects to earn certification.
 
-For this porject, you will build a surbey form to collect data from users.<br>
+For this project, you will build a survey form to collect data from users.
 
 **Objective**: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks
 
